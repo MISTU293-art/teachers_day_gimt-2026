@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login — Teachers' Day 2026 | Department of CSE</title>
+<meta name="description" content="Admin login for the CSE Department Teachers' Day site.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav scrolled">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <svg class="logo-chip" viewBox="0 0 40 40" fill="none">
+        <rect x="10" y="10" width="20" height="20" rx="3" stroke="#f2b705" stroke-width="2"/>
+        <rect x="16" y="16" width="8" height="8" rx="1.5" fill="#5eead4"/>
+        <path d="M10 16H4M10 24H4M30 16H36M30 24H36M16 10V4M24 10V4M16 30V36M24 30V36" stroke="#5eead4" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span>CSE<small>DEPARTMENT&nbsp;•&nbsp;2ND&nbsp;YEAR</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#schedule">Schedule</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost">← Back to site</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ LOGIN ============ -->
+<section class="login-shell">
+  <div class="circuit-bg" aria-hidden="true" style="opacity:.35;">
+    <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+      <path class="circuit-line" d="M0 120 H260 V220 H520 V120 H1200"/>
+      <path class="circuit-line live" d="M-50 300 H300 V180 H600 V300 H1250"/>
+      <path class="circuit-line" d="M900 0 V140 H1080 V400"/>
+      <circle class="circuit-node pulse" cx="600" cy="300" r="4"/>
+      <circle class="circuit-node" cx="1080" cy="140" r="4"/>
+    </svg>
+  </div>
+
+  <div class="login-card">
+    <div class="terminal-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="terminal-title">admin_login.py</span>
+    </div>
+
+    <!-- ---- login form ---- -->
+    <div class="login-body" id="loginBody">
+      <div class="login-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </div>
+      <h1>Admin Login</h1>
+      <p class="login-sub">Restricted access — for the Teachers' Day 2nd Year CSE organizing committee only.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="admin@cse.dept" autocomplete="username" required>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="••••••••" autocomplete="current-password" required>
+        </div>
+        <button type="submit" class="btn btn-primary login-submit">Sign In →</button>
+      </form>
+
+      <p class="login-foot">Not an admin? <a href="index.html">Return to the celebration →</a></p>
+    </div>
+
+    <!-- ---- coming soon panel (shown after submit) ---- -->
+    <div class="soon-panel" id="soonPanel">
+      <div class="soon-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      </div>
+      <h2>Admin Panel — Coming Soon</h2>
+      <p>We're still compiling this dashboard. Content management for the Teachers' Day site is on its way.</p>
+      <div class="soon-bar"><div class="soon-bar-fill"></div></div>
+      <p class="soon-caption">// building_dashboard.exe — please check back soon</p>
+      <a href="index.html" class="btn btn-ghost">← Back to site</a>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById('loginForm')?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.getElementById('loginBody').classList.add('hide');
+    document.getElementById('soonPanel').classList.add('show');
+  });
+</script>
+</body>
+</html>

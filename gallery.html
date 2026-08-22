@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Teachers' Day 2026 | Department of CSE</title>
+<meta name="description" content="Photo gallery — Teachers' Day Celebration, CSE Department, 2nd Year Students.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <svg class="logo-chip" viewBox="0 0 40 40" fill="none">
+        <rect x="10" y="10" width="20" height="20" rx="3" stroke="#f2b705" stroke-width="2"/>
+        <rect x="16" y="16" width="8" height="8" rx="1.5" fill="#5eead4"/>
+        <path d="M10 16H4M10 24H4M30 16H36M30 24H36M16 10V4M24 10V4M16 30V36M24 30V36" stroke="#5eead4" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span>CSE<small>DEPARTMENT&nbsp;•&nbsp;2ND&nbsp;YEAR</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#schedule">Schedule</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="login.html" class="btn-admin">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <span>Admin Login</span>
+      </a>
+      <a href="index.html#schedule" class="btn btn-primary">See Schedule</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ GALLERY HERO ============ -->
+<section class="gallery-hero container">
+  <p class="eyebrow">gallery.viewAll()</p>
+  <h1>Captured moments</h1>
+  <p>Every candid smile, group huddle and stolen selfie from the CSE department — click any photo to view it full-screen.</p>
+</section>
+
+<!-- ============ MASONRY GRID ============ -->
+<section class="section-pad" style="padding-top: 30px;">
+  <div class="container">
+    <div class="masonry">
+      <figure><img src="images/photo01.jpg" alt="CSE students group photo" loading="lazy"><figcaption>moment_01.jpg</figcaption></figure>
+      <figure><img src="images/photo02.jpg" alt="CSE students Teachers' Day moment" loading="lazy"><figcaption>moment_02.jpg</figcaption></figure>
+      <figure><img src="images/photo03.jpg" alt="CSE students Teachers' Day moment" loading="lazy"><figcaption>moment_03.jpg</figcaption></figure>
+      <figure><img src="images/photo04.jpg" alt="CSE students Teachers' Day moment" loading="lazy"><figcaption>moment_04.jpg</figcaption></figure>
+      <figure><img src="images/photo05.jpg" alt="CSE students Teachers' Day moment" loading="lazy"><figcaption>moment_05.jpg</figcaption></figure>
+      <figure><img src="images/photo06.jpg" alt="CSE students Teachers' Day moment" loading="lazy"><figcaption>moment_06.jpg</figcaption></figure>
+      <figure><img src="images/photo07.jpg" alt="CSE students Teachers' Day moment" loading="lazy"><figcaption>moment_07.jpg</figcaption></figure>
+      <figure><img src="images/photo08.jpg" alt="CSE students Teachers' Day moment" loading="lazy"><figcaption>moment_08.jpg</figcaption></figure>
+      <figure><img src="images/photo09.jpg" alt="CSE students Teachers' Day moment" loading="lazy"><figcaption>moment_09.jpg</figcaption></figure>
+      <figure><img src="images/photo10.jpg" alt="CSE students Teachers' Day moment" loading="lazy"><figcaption>moment_10.jpg</figcaption></figure>
+      <figure><img src="images/photo11.jpg" alt="CSE students Teachers' Day moment" loading="lazy"><figcaption>moment_11.jpg</figcaption></figure>
+      <figure><img src="images/photo12.jpg" alt="CSE students Teachers' Day moment" loading="lazy"><figcaption>moment_12.jpg</figcaption></figure>
+      <figure><img src="images/photo13.jpg" alt="CSE students Teachers' Day moment" loading="lazy"><figcaption>moment_13.jpg</figcaption></figure>
+      <figure><img src="images/photo14.jpg" alt="CSE students Teachers' Day moment" loading="lazy"><figcaption>moment_14.jpg</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lb-close" aria-label="Close">✕</button>
+  <button class="lb-prev" id="lb-prev" aria-label="Previous">‹</button>
+  <img id="lb-img" src="" alt="Enlarged gallery photo">
+  <button class="lb-next" id="lb-next" aria-label="Next">›</button>
+  <span class="lb-counter" id="lb-counter"></span>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <svg class="logo-chip" viewBox="0 0 40 40" fill="none">
+            <rect x="10" y="10" width="20" height="20" rx="3" stroke="#f2b705" stroke-width="2"/>
+            <rect x="16" y="16" width="8" height="8" rx="1.5" fill="#5eead4"/>
+            <path d="M10 16H4M10 24H4M30 16H36M30 24H36M16 10V4M24 10V4M16 30V36M24 30V36" stroke="#5eead4" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>CSE<small>DEPARTMENT&nbsp;•&nbsp;2ND&nbsp;YEAR</small></span>
+        </div>
+        <p>A Teachers' Day tribute built and maintained by the 2nd Year Computer Science &amp; Engineering students — celebrating the mentors behind every line of code we've written.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#schedule">Schedule</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Event Info</h4>
+        <ul class="footer-links">
+          <li>3rd September 2026</li>
+          <li>Department of CSE</li>
+          <li>Organized by 2nd Year Students</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="year"></span> CSE Department — Teachers' Day Committee</span>
+      <span>Made with &lt;3 and a little &lt;div&gt; by 2nd Year CSE</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
